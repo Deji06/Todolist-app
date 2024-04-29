@@ -82,8 +82,9 @@ form select{
 /* media querries */ 
 @media screen and (max-width: 320px){
   body{
-    /* border: 1px solid green; */
-    max-width: 620px;
+    border: 1px solid green;
+
+    width: 100%;
   }
   .box_container {
     /* background-color: black; */
