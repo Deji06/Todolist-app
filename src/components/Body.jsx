@@ -9,18 +9,7 @@ const Body = ({setShowTaskBar, filterOption , setFilterOption}) => {
   const addTaskBtn = () => {
     setShowTaskBar((prevState) => !prevState);
   };
-
-  // functions 
-  // const allBtn = () => {
-  //    console.log('all btn')
-  // }
-  // const incompleteBtn = () => {
-  //   console.log('incomplete btn')
-  // }
-  // const completeBtn = () => {
-  //   console.log('complete btn')
-  // }
-
+  
   console.log(filterOption)
 
   return (
