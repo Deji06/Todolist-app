@@ -1,8 +1,8 @@
 import React from "react";
 // import Task from './Task'
-import { useState } from 'react'
+// import { useState } from 'react'
 
-const Body = ({ showTaskBar, setShowTaskBar, filterOption , setFilterOption}) => {
+const Body = ({setShowTaskBar, filterOption , setFilterOption}) => {
 
   // const [filterOption, setFilterOption] = useState("all")
 
@@ -25,7 +25,7 @@ const Body = ({ showTaskBar, setShowTaskBar, filterOption , setFilterOption}) =>
 
   return (
     <div style={{ width: "600px", margin: "10px auto" }}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="btn--con"  style={{ display: "flex", justifyContent: "space-between"}}>
         <button
           style={{
             backgroundColor: "#646FF0",
@@ -43,7 +43,7 @@ const Body = ({ showTaskBar, setShowTaskBar, filterOption , setFilterOption}) =>
           Add task
         </button>
 
-        <select
+        <select className="select--container"
           name="options"
           style={{
             backgroundColor: "#CCCDDE",

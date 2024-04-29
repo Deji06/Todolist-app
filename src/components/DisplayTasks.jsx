@@ -1,16 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-import { CiEdit } from "react-icons/ci";
-import EditTask from "./EditTask";
+// import { CiEdit } from "react-icons/ci";
+// import EditTask from "./EditTask";
 
-const DisplayTasks = ({ setTaskArray, taskArray, setShowTaskBar , showTaskBar, editTaskBar, setEditTaskBar, filterOption, completed}) => {
-
-// states
-const [editModal, setEditModal] = useState(false);    /* display modal state*/
-// const[showTaskCategory, setShowTaskCategory] = useState('')
-
-
+const DisplayTasks = ({ setTaskArray, taskArray, setEditTaskBar, filterOption, completed}) => {
 
   const handleCheck = (index) => {
     const updatedTasks = [...taskArray];
@@ -27,20 +20,17 @@ const [editModal, setEditModal] = useState(false);    /* display modal state*/
 
 
 // edit Task function
-const editTask = () => {
-  setEditTaskBar(prev => !prev)
-}
-
-
+// const editTask = () => {
+//   setEditTaskBar(prev => !prev)
+// }
   console.log(taskArray);
   return (
     <>
-   
       {taskArray
-      .filter((task) => filterOption == "all" || task.status === filterOption )
+      .filter((task) => filterOption === "all" || task.status === filterOption )
       .map((task, index) => {
         return (
-          <div
+          <div className="box_container"
             key={index}
             style={{
               backgroundColor: "#fff",
@@ -58,7 +48,7 @@ const editTask = () => {
                 name="check"
                 onChange={() => handleCheck(index)}
               />
-              <p style={{  textDecoration: task.completed ? "line-through" : "none",}}>
+              <p style={{  textDecoration: task.completed ? "line-through" : "none"}}>
                 {" "}
                 {task.name}
               </p>

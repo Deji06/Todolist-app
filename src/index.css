@@ -9,6 +9,27 @@ body {
   background-color: #F8F8FF;
 
 }
+main h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.small_screen {
+  text-transform: capitalize;
+  text-align: left;
+  color: #646681;
+  margin-top: 30px;
+  font-size: 3rem;
+  background-color: red;
+}
+
+.big_screen {
+  text-align: center;
+  color: #646681;
+  margin-top: 30px;
+  font-size: 3rem;
+  /* background-color: green; */
+}
 
 .todo--container {
   position: relative;
@@ -56,4 +77,29 @@ form select{
 .btn--container {
   display: flex;
   flex-direction: column;
+}
+
+/* media querries */ 
+@media screen and (max-width: 320px){
+  body{
+    /* border: 1px solid green; */
+    max-width: 620px;
+  }
+  .box_container {
+    /* background-color: black; */
+    width: 600px;
+    margin-top: -10px;
+  }
+
+ 
+  .form_container {
+    margin-top: 0px;
+    margin: auto -400px;
+
+}
+.task--container {
+  margin: 100px;
+}
+
+
 }

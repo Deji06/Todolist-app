@@ -12,16 +12,7 @@ const SetTask = ({ setTaskArray, taskArray, setShowTaskBar ,userInputValue, setU
     //  console.log(userInputValue);
     setUserInputValue(event.target.value);
   };
-  // console.log("boolean",completed === "completed" ? true : false )
-
-  // const name = "deji"
-
-  // const friend = "abdullah"
-
-  // console.log(name === "deji")
-  // console.log(name === "abdullah")
-  // console.log(name === friend)
-
+  
   const addTask = () => {
     console.log(taskArray);
     console.log(userInputValue);
@@ -46,7 +37,7 @@ const SetTask = ({ setTaskArray, taskArray, setShowTaskBar ,userInputValue, setU
   return (
     <>
       <div
-        className="form--container"
+        className="form_container"
         style={{
           width: "500px",
           boxShadow: " 0 0 20px rgba(0,0,0,.2)",
